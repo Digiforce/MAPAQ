@@ -1,0 +1,35 @@
+﻿
+@model IEnumerable<LaboratoireData.Models.IAnalyse>
+
+@{
+    ViewData["Title"] = "Analyses de cristaux";
+
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<form method="post" asp-action="Analyse" Asp-controller="Analyse">
+
+    @Html.ActionLink("Nouvelle analyse", "Analyse", "Analyse", new { @class = "nav-link active" })
+
+    <div class="row">
+        <div class="col-md-1 h4">No</div>
+        <div class="col-md-2 h4">Date Prelevement</div>
+        <div class="col-md-2 h4">Date Analyse</div>
+        <div class="col-md-3 h4">Couleur Echantillon</div>
+        <div class="col-md-3 h4">Type cristal </div>
+    </div>
+
+    @foreach (var item in Model)
+    {
+
+        <div class="row">
+            <div class="col-md-1">@item.Id </div>
+            <div class="col-md-2">@item.Echantillon.DatePrelevement.ToString("yyyy-MM-dd") </div>
+            <div class="col-md-2">@item.DateAnalyse.ToString("yyyy-MM-dd")</div>
+            <div class="col-md-3">@item.Echantillon.Couleur </div>
+            <div class="col-md-3">@item.Resultat </div>
+        </div>
+    }
+
+</form>

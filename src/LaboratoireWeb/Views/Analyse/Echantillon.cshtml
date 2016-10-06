@@ -1,0 +1,22 @@
+﻿
+@model LaboratoireData.Models.IEchantillon
+
+@{
+    ViewData["Title"] = "Analyse";
+
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+
+<form method="post" asp-action="Analyse" Asp-controller="Analyse">
+
+
+    <div class=form-group>
+        <label for="Couleur">Couleur : </label>
+        <input asp-for="Couleur"  class="form-control" />
+    </div>
+    <input type="submit" value="Analyser" class="btn btn-default ">
+</form>
+
+

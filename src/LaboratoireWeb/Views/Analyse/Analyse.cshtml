@@ -1,0 +1,23 @@
+﻿
+@model LaboratoireData.Models.IAnalyse
+
+@{
+    ViewData["Title"] = "Résultat d'analyse";
+
+}
+<h2>@ViewData["Title"]</h2>
+<h3>@ViewData["Message"]</h3>
+
+<form method="get" asp-action="Index" Asp-controller="Analyse" >
+
+    <div class=form-group>
+        <label for="Echantillon_Couleur">Couleur : </label>
+        <input asp-for="Echantillon.Couleur"  readonly />
+    </div>
+    <div class=form-group>
+        <label for="Resultat" >Type de cristal : </label>
+        <input asp-for="Resultat" readonly />
+    </div>
+    <input type="submit" value="Retour" class="btn btn-default ">
+</form>
+

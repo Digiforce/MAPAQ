@@ -1,0 +1,17 @@
+{
+  "version": "1.0.0-*",
+
+  "dependencies": {
+    "LaboratoireData": "1.0.0-*",
+    "Microsoft.CodeCoverage": "1.0.2",
+    "Microsoft.Extensions.DependencyInjection": "1.0.0",
+    "NETStandard.Library": "1.6.0",
+    "OpenCover": "4.6.519"
+  },
+
+  "frameworks": {
+    "netstandard1.6": {
+      "imports": "dnxcore50"
+    }
+  }
+}

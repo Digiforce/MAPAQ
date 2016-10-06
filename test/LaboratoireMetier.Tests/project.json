@@ -1,0 +1,57 @@
+{
+  "version": "1.0.0-*",
+  "testRunner": "xunit",
+  "dependencies": {
+    "dotnet-test-xunit": "2.2.0-preview2-build1029",
+    "LaboratoireMetier": "1.0.0-*",
+    "xunit": "2.2.0-beta2-build3300",
+    "System.Diagnostics.TraceSource": "4.0.0",
+    "Moq": "4.6.38-alpha",
+    "Castle.Core": "4.0.0-beta001",
+    "LaboratoireData": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "netcoreapp1.0": {
+      "dependencies": {
+        "Microsoft.NETCore.App": {
+          "type": "platform",
+          "version": "1.0.0"
+        }
+      }
+    }
+  }
+
+  //"frameworks": {
+  //  "netstandardapp1.5": {
+  //    "imports": [
+  //      "portable-net451+win8",
+  //      "dnxcore50"
+  //    ]
+  //  }
+  ////}
+  //"frameworks": {
+  //  "netcoreapp1.0": {
+  //    "dependencies": {
+  //      "Microsoft.NETCore.App": {
+  //        "type": "platform",
+  //        "version": "1.0.0"
+  //      }
+  //    }
+  //    //"imports": [
+  //    //  "portable-net451+win8",
+  //    //  "dnxcore50"
+  //    //]
+  //  }
+  //}
+
+
+  //"frameworks": {
+  //  "netstandard1.6": {
+  //    "imports": [
+  //      "dnxcore50",
+  //      "portable-net45+win8"
+  //    ]
+  //  }
+  //}
+}
